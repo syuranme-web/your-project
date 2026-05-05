@@ -1710,5 +1710,32 @@
     // 初期描画
     renderCart();
   </script>
+
+
+
+<script>
+async function buy(productId) {
+  try {
+    const res = await fetch('/api/create-checkout-session', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ productId })
+    });
+
+    const data = await res.json();
+
+    if (data.url) {
+      window.location.href = data.url;
+    } else {
+      alert('エラー: ' + data.error);
+    }
+  } catch (err) {
+    alert('通信エラー');
+    console.error(err);
+  }
+}
+</script>
 </body>
 </html>
