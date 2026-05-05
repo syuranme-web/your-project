@@ -735,11 +735,11 @@
               <div class="variant-btns" id="pirozhki-variants">
                 <button class="variant-btn selected" data-product="pirozhki" data-variant="meat" data-price="1680" onclick="selectVariant('pirozhki','meat',this)">
                   <span class="vb-name">🥩 ジューシーミート</span>
-                  <span class="vb-price_1TNRp5CYgYx6cZLVOMqHFBFx_1">¥1,680（4個入り）</span>
+                  <span class="vb-price">¥1,680（4個入り）</span>
                 </button>
                 <button class="variant-btn" data-product="pirozhki" data-variant="veggie" data-price="1680" onclick="selectVariant('pirozhki','veggie',this)">
                   <span class="vb-name">🥚 たまごとキャベツ</span>
-                  <span class="vb-price_1TNn64CYgYx6cZLVHhSaDXIz_2">¥1,680（4個入り）</span>
+                  <span class="vb-price">¥1,680（4個入り）</span>
                   <span class="vb-note">やさしい味わい</span>
                 </button>
               </div>
@@ -751,7 +751,7 @@
               </div>
               <button class="product-card__buy" onclick="handleBuy(this)" aria-label="ピロシキをカートに入れる">カートへ</button>
             </div>
-            <button class="product-card__stripe-btn" onclick="checkoutSingle(this,'pirozhki')" aria-label="ピロシキを今すぐ購入">
+            <button class="product-card__stripe-btn" data-product="p1" onclick="checkoutSingle(this,'pirozhki')" aria-label="ピロシキを今すぐ購入">
               💳 今すぐ購入する（Stripe）
             </button>
             <div class="product-card__trust"><span>🔒</span><span>安全な決済（Stripe）</span><span style="margin-left:auto">❄️ クール便</span></div>
@@ -777,11 +777,11 @@
               <div class="variant-btns" id="pelmeni-variants">
                 <button class="variant-btn selected" data-product="pelmeni" data-variant="400g" data-price="1480" onclick="selectVariant('pelmeni','400g',this)">
                   <span class="vb-name">400g</span>
-                  <span class="vb-price_1TNRocCYgYx6cZLVD9p8g7Db_3">¥1,480</span>
+                  <span class="vb-price">¥1,480</span>
                 </button>
                 <button class="variant-btn" data-product="pelmeni" data-variant="800g" data-price="2780" onclick="selectVariant('pelmeni','800g',this)">
                   <span class="vb-name">800g</span>
-                  <span class="vb-price_1TNn7LCYgYx6cZLV2z8cAVRN_4">¥2,780</span>
+                  <span class="vb-price">¥2,780</span>
                   <span class="vb-note">通常¥2,960 → お得</span>
                 </button>
               </div>
@@ -794,7 +794,7 @@
               </div>
               <button class="product-card__buy" onclick="handleBuy(this)" aria-label="ペリメニをカートに入れる">カートへ</button>
             </div>
-            <button class="product-card__stripe-btn" onclick="checkoutSingle(this,'pelmeni')" aria-label="ペリメニを今すぐ購入">
+            <button class="product-card__stripe-btn" data-product="p3" onclick="checkoutSingle(this,'pelmeni')" aria-label="ペリメニを今すぐ購入">
               💳 今すぐ購入する（Stripe）
             </button>
             <div class="product-card__trust"><span>🔒</span><span>安全な決済（Stripe）</span><span style="margin-left:auto">❄️ クール便</span></div>
@@ -841,11 +841,11 @@
               <div class="product-card__price-wrap">
                 <p class="product-card__price-orig">通常 ¥3,160</p>
                 <p class="product-card__price-tax">税込</p>
-                <p class="product-card__price_1TNn8BCYgYx6cZLVUPAqzder_6">¥2,980</p>
+                <p class="product-card__price">¥2,980</p>
               </div>
               <button class="product-card__buy" onclick="handleBuy(this)" aria-label="はじめての東欧セットをカートに入れる">カートへ</button>
             </div>
-            <button class="product-card__stripe-btn" onclick="checkoutSingle(this,'set_intro')" aria-label="今すぐ購入">
+            <button class="product-card__stripe-btn" data-product="p5" onclick="checkoutSingle(this,'set_intro')" aria-label="今すぐ購入">
               💳 今すぐ購入する（Stripe）
             </button>
             <div class="product-card__trust"><span>🔒</span><span>安全な決済（Stripe）</span><span style="margin-left:auto">❄️ クール便</span></div>
@@ -874,11 +874,11 @@
               <div class="product-card__price-wrap">
                 <p class="product-card__price-orig">通常 ¥6,180</p>
                 <p class="product-card__price-tax">税込</p>
-                <p class="product-card__price_1TNn8bCYgYx6cZLVAfne2dvI_7">¥5,480</p>
+                <p class="product-card__price">¥5,480</p>
               </div>
               <button class="product-card__buy" onclick="handleBuy(this)" aria-label="満足セットをカートに入れる">カートへ</button>
             </div>
-            <button class="product-card__stripe-btn" onclick="checkoutSingle(this,'set_full')" aria-label="今すぐ購入">
+            <button class="product-card__stripe-btn" data-product="p6" onclick="checkoutSingle(this,'set_full')" aria-label="今すぐ購入">
               💳 今すぐ購入する（Stripe）
             </button>
             <div class="product-card__trust"><span>🔒</span><span>安全な決済（Stripe）</span><span style="margin-left:auto">❄️ クール便</span></div>
@@ -907,11 +907,11 @@
               <div class="product-card__price-wrap">
                 <p class="product-card__price-orig">通常 ¥1,680</p>
                 <p class="product-card__price-tax">税込</p>
-                <p class="product-card__price_1TNn98CYgYx6cZLV050NK4Ee_8">¥1,580</p>
+                <p class="product-card__price">¥1,580</p>
               </div>
               <button class="product-card__buy" onclick="handleBuy(this)" aria-label="ピロシキ食べ比べセットをカートに入れる">カートへ</button>
             </div>
-            <button class="product-card__stripe-btn" onclick="checkoutSingle(this,'set_pirozhki')" aria-label="今すぐ購入">
+            <button class="product-card__stripe-btn" data-product="p7" onclick="checkoutSingle(this,'set_pirozhki')" aria-label="今すぐ購入">
               💳 今すぐ購入する（Stripe）
             </button>
             <div class="product-card__trust"><span>🔒</span><span>安全な決済（Stripe）</span><span style="margin-left:auto">❄️ クール便</span></div>
@@ -1289,20 +1289,33 @@
     Object.keys(PRODUCTS).forEach(id => { activeVariants[id] = PRODUCTS[id].defaultVariant; });
 
     /* ============================================================
-       バリアント選択
+       バリアント選択 — 選択に合わせて data-product も自動更新
     ============================================================ */
     function selectVariant(productId, variantKey, btn) {
       activeVariants[productId] = variantKey;
       btn.parentElement.querySelectorAll('.variant-btn').forEach(b => b.classList.remove('selected'));
       btn.classList.add('selected');
 
-      // ペリメニは価格表示も更新
+      // ペリメニ: 価格表示更新 + data-product 更新（p3/p4）
       if (productId === 'pelmeni') {
         const v = PRODUCTS.pelmeni.variants[variantKey];
         document.getElementById('pelmeni-price').innerHTML =
           '¥' + v.price.toLocaleString() + '<small> / ' + v.unit + '</small>';
         const origEl = document.getElementById('pelmeni-orig');
         origEl.textContent = v.orig ? '通常 ¥' + v.orig.toLocaleString() : '';
+        // ボタンの data-product をバリアントに合わせて更新
+        const pelmeniStripeBtn = document.querySelector('#card-pelmeni .product-card__stripe-btn');
+        if (pelmeniStripeBtn) {
+          pelmeniStripeBtn.dataset.product = (variantKey === '800g') ? 'p4' : 'p3';
+        }
+      }
+
+      // ピロシキ: data-product を meat=p1 / veggie=p2 に更新
+      if (productId === 'pirozhki') {
+        const pirozhkiStripeBtn = document.querySelector('#card-pirozhki .product-card__stripe-btn');
+        if (pirozhkiStripeBtn) {
+          pirozhkiStripeBtn.dataset.product = (variantKey === 'veggie') ? 'p2' : 'p1';
+        }
       }
     }
 
@@ -1456,92 +1469,158 @@
        ⚠️ Stripe ダッシュボードで作成した Price ID に書き換えること
           テスト: price_test_XXXX  本番: price_live_XXXX
     ============================================================ */
-    const PRICE_IDS = {
-      'pirozhki__meat':        'price_XXXXXXXXXX_pirozhki_meat',
-      'pirozhki__veggie':      'price_XXXXXXXXXX_pirozhki_veggie',
-      'pelmeni__400g':         'price_XXXXXXXXXX_pelmeni_400g',
-      'pelmeni__800g':         'price_XXXXXXXXXX_pelmeni_800g',
-      'set_intro__meat':       'price_XXXXXXXXXX_set_intro_meat',
-      'set_intro__veggie':     'price_XXXXXXXXXX_set_intro_veggie',
-      'set_full__default':     'price_XXXXXXXXXX_set_full',
-      'set_pirozhki__default': 'price_XXXXXXXXXX_set_pirozhki',
+    /* ============================================================
+       商品ID (p1〜p7) → Stripe Price ID マッピング
+       ※ API側の create-checkout-session.js と必ず一致させること
+    ============================================================ */
+    const PRODUCT_MAP = {
+      p1: { priceId: 'price_1TNRp5CYgYx6cZLVOMqHFBFx', name: 'ピロシキ（ジューシーミート）',    amount: 1680 },
+      p2: { priceId: 'price_1TNn64CYgYx6cZLVHhSaDXIz', name: 'ピロシキ（たまごとキャベツ）',    amount: 1680 },
+      p3: { priceId: 'price_1TNRocCYgYx6cZLVD9p8g7Db', name: '東欧の水餃子 ペリメニ 400g',      amount: 1480 },
+      p4: { priceId: 'price_1TNn7LCYgYx6cZLV2z8cAVRN', name: '東欧の水餃子 ペリメニ 800g',      amount: 2780 },
+      p5: { priceId: 'price_1TNn8BCYgYx6cZLVUPAqzder', name: 'はじめての東欧セット',            amount: 2980 },
+      p6: { priceId: 'price_1TNn8bCYgYx6cZLVAfne2dvI', name: '満足セット',                     amount: 5480 },
+      p7: { priceId: 'price_1TNn98CYgYx6cZLV050NK4Ee', name: 'ピロシキ食べ比べセット',          amount: 1480 },
+    };
+
+    /* カート内部キー → 商品ID マッピング（カートから決済する際に使用） */
+    const CART_KEY_TO_PRODUCT_ID = {
+      'pirozhki__meat':        'p1',
+      'pirozhki__veggie':      'p2',
+      'pelmeni__400g':         'p3',
+      'pelmeni__800g':         'p4',
+      'set_intro__meat':       'p5',
+      'set_intro__veggie':     'p5',
+      'set_full__default':     'p6',
+      'set_pirozhki__default': 'p7',
     };
 
     /* ============================================================
-       単品 Stripe Checkout（商品カードの「今すぐ購入」ボタン用）
+       単品 Stripe Checkout
+       btn       : クリックされたボタン要素
+       internalId: カード内部のproductId（'pirozhki' 等）
+       各ボタンの data-product 属性から p1〜p7 を取得して決済
     ============================================================ */
-    async function checkoutSingle(btn, productId) {
-      const variantKey = activeVariants[productId];
-      const cartKey    = productId + '__' + variantKey;
-      const priceId    = PRICE_IDS[cartKey];
-
-      if (!priceId || priceId.includes('XXXXXXXXXX')) {
-        showCheckoutError('cartError', '現在この商品は準備中です。カートからまとめてご購入ください。');
+    async function checkoutSingle(btn, internalId) {
+      // ボタンの data-product 属性から商品ID (p1〜p7) を取得
+      const pid = btn.dataset.product;
+      if (!pid || !PRODUCT_MAP[pid]) {
+        // data-product がない場合はカート内部キーから変換
+        const variantKey = activeVariants[internalId];
+        const cartKey    = internalId + '__' + variantKey;
+        const mappedPid  = CART_KEY_TO_PRODUCT_ID[cartKey];
+        if (!mappedPid) {
+          showCheckoutError('cartError', '商品情報が取得できませんでした。');
+          return;
+        }
+        await doCheckout(btn, mappedPid, 1);
         return;
       }
-      await doCheckout(btn, [{ priceId, quantity: 1 }]);
+      await doCheckout(btn, pid, 1);
     }
 
     /* ============================================================
        カートまとめ Stripe Checkout（カートドロワーの「Stripe決済」ボタン用）
+       カート内の複数商品をまとめて決済する場合、最初の商品のみを
+       単体セッションで決済する（Stripe Checkout は複数 line_items 対応）
     ============================================================ */
     async function checkoutCart() {
       const items = Object.values(cart);
       if (items.length === 0) return;
 
-      // カートの各アイテムを priceId に変換
-      const lineItems = [];
+      const btn = document.getElementById('cartStripeBtn');
+
+      // カート内アイテムを productId (p1〜p7) + quantity に変換
+      const cartProducts = [];
       for (const item of items) {
-        const priceId = PRICE_IDS[item.key];
-        if (!priceId || priceId.includes('XXXXXXXXXX')) {
-          showCheckoutError('cartError', `「${item.name}」の決済準備ができていません。管理者にお問い合わせください。`);
+        const pid = CART_KEY_TO_PRODUCT_ID[item.key];
+        if (!pid) {
+          showCheckoutError('cartError', `「${item.name}」の商品情報が見つかりません。`);
           return;
         }
-        lineItems.push({ priceId, quantity: item.qty });
+        cartProducts.push({ productId: pid, quantity: item.qty });
       }
 
-      const btn = document.getElementById('cartStripeBtn');
-      await doCheckout(btn, lineItems);
+      await doCheckoutMulti(btn, cartProducts);
     }
 
     /* ============================================================
-       共通: /api/create-checkout を呼び出して Stripe Checkout へ遷移
+       共通: ボタンローディング制御ヘルパー
     ============================================================ */
-    async function doCheckout(btn, lineItems) {
-      // ボタンをローディング状態に
-      const originalHTML = btn ? btn.innerHTML : '';
-      if (btn) {
-        btn.innerHTML = '<span class="spinner"></span> 決済ページへ移動中...';
+    function setLoading(btn, isLoading, originalHTML) {
+      if (!btn) return;
+      if (isLoading) {
+        btn.dataset.origHtml = btn.innerHTML;
+        btn.innerHTML = '<span class="spinner' + (btn.classList.contains('product-card__stripe-btn') ? ' spinner--gold' : '') + '"></span> 移動中...';
         btn.disabled  = true;
+      } else {
+        btn.innerHTML = originalHTML || btn.dataset.origHtml || '購入する';
+        btn.disabled  = false;
       }
+    }
+
+    /* ============================================================
+       単品決済: /api/create-checkout-session に { productId } を POST
+    ============================================================ */
+    async function doCheckout(btn, productId, quantity = 1) {
+      const origHTML = btn ? btn.innerHTML : '';
+      setLoading(btn, true, origHTML);
       hideCheckoutError('cartError');
 
       try {
-        const res = await fetch('/api/create-checkout', {
+        const res = await fetch('/api/create-checkout-session', {
           method:  'POST',
           headers: { 'Content-Type': 'application/json' },
-          body:    JSON.stringify({ lineItems }),
+          body:    JSON.stringify({ productId }),
         });
 
         if (!res.ok) {
           const errData = await res.json().catch(() => ({}));
-          throw new Error(errData.error || `HTTPエラー: ${res.status}`);
+          throw new Error(errData.error || `サーバーエラー (${res.status})`);
         }
 
         const data = await res.json();
-
         if (!data.url) throw new Error('決済URLが取得できませんでした。');
 
-        // Stripe Checkout ページへリダイレクト
         window.location.href = data.url;
 
       } catch (err) {
         console.error('[Checkout Error]', err);
-        showCheckoutError('cartError', err.message || '決済の開始に失敗しました。時間をおいて再度お試しください。');
-        if (btn) {
-          btn.innerHTML = originalHTML;
-          btn.disabled  = false;
+        showCheckoutError('cartError', err.message || '決済の開始に失敗しました。しばらくしてから再度お試しください。');
+        setLoading(btn, false, origHTML);
+      }
+    }
+
+    /* ============================================================
+       複数商品決済: /api/create-checkout-session に { products } を POST
+       cartProducts = [{ productId, quantity }, ...]
+    ============================================================ */
+    async function doCheckoutMulti(btn, cartProducts) {
+      const origHTML = btn ? btn.innerHTML : '';
+      setLoading(btn, true, origHTML);
+      hideCheckoutError('cartError');
+
+      try {
+        const res = await fetch('/api/create-checkout-session', {
+          method:  'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body:    JSON.stringify({ products: cartProducts }),
+        });
+
+        if (!res.ok) {
+          const errData = await res.json().catch(() => ({}));
+          throw new Error(errData.error || `サーバーエラー (${res.status})`);
         }
+
+        const data = await res.json();
+        if (!data.url) throw new Error('決済URLが取得できませんでした。');
+
+        window.location.href = data.url;
+
+      } catch (err) {
+        console.error('[Checkout Error]', err);
+        showCheckoutError('cartError', err.message || '決済の開始に失敗しました。しばらくしてから再度お試しください。');
+        setLoading(btn, false, origHTML);
       }
     }
 
@@ -1560,7 +1639,7 @@
     }
 
     /* ============================================================
-       既存 handleCheckout（カートドロワーの旧ボタン用 — 互換性維持）
+       handleCheckout: カートドロワーから呼ばれる（互換性維持）
     ============================================================ */
     function handleCheckout() {
       checkoutCart();
