@@ -217,8 +217,8 @@ export async function onRequestPost({ request, env }) {
       ...buildLineItemsPayload(lineItems),
 
       // リダイレクト先
-      success_url: `${clientUrl}/success?session_id={CHECKOUT_SESSION_ID}`,
-      cancel_url:  `${clientUrl}/cancel`,
+      success_url: `${clientUrl}/success.html?session_id={CHECKOUT_SESSION_ID}`,
+cancel_url: `${clientUrl}/cancel.html`,
 
       // 日本語表示
       locale: 'ja',
